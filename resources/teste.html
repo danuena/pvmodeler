@@ -1,0 +1,17 @@
+<script>
+ // el codigo donde se encuentra el diagrama BPMN de ejemplo
+import pizzaDiagram from '../resources/pizza-collaboration.bpmn';
+// Importar las dependencias del bpmn-js ya instaladas 
+import BpmnViewer from 'bpmn-js';
+// Inicializar el visualizador en el contenedor de nombre canvas
+var viewer = new BpmnViewer({
+  container: '#canvas'
+});
+// Importar el diagrama previamente inicializado al visualizador
+viewer.importXML(pizzaDiagram).then(function(result) {
+        viewer.get('canvas').zoom('fit-viewport');
+    }).catch(function(err) {
+});
+
+  </script>
+  

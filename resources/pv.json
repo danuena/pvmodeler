@@ -1,0 +1,25 @@
+{
+  "name": "ProcessVariability",
+  "uri": "http://some-company/schema/bpmn/pv",
+  "prefix": "pv",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "types": [
+    {
+      "name": "ProcessVariabilityNodes",
+      "extends": [
+        "bpmn:FlowNode",
+        "bpmn:SequenceFlow"
+      ],
+      "properties": [
+        {
+          "name": "PVNodeType",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    }
+   
+  ]
+}

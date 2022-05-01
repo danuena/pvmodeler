@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PVModeler</title>
+
+  <link rel="stylesheet" href="vendor/bpmn-js/assets/diagram-js.css" />
+  <link rel="stylesheet" href="vendor/bpmn-js/assets/bpmn-font/css/bpmn-embedded.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+<img src="css/imgs/pvmodelerlogo.png" alt="logo" id="pvlogo">
+
+<div class="content" id="js-drop-zone" hidden>
+</div>
+
+<div class="canvas" id="js-canvas"></div>
+
+  <div id="container">  
+    <ul class="buttons">
+      <li>
+        <a id="js-new-diagram" class="active" href title="New  BPMN extended diagram">
+        New Diagram
+        </a>
+      </li>
+      <li>
+        <a id="js-import-diagram" class="active" href title="Import BPMN extended diagram">
+          Import Diagram
+        </a>
+        <input id="file-input" type="file" name="name" style="display: none;" />
+      </li>
+      </li>
+      <li>
+        <a id="js-download-diagram" href title="download BPMN diagram">
+          Download BPMN diagram
+        </a>
+      </li>
+      <li>
+        <a id="js-download-svg" href title="download as SVG image">
+          Download SVG image
+        </a>
+      </li>
+  </ul></div>
+
+
+  
+ 
+
+  
+
+  <script src="app.js"></script>
+</html>
